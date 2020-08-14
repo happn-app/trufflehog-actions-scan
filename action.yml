@@ -5,9 +5,6 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
 inputs:
-  githubToken:
-    description: 'Token to access a private repository.'
-    required: false
   registry:
     description: 'registry.'
     required: false
