@@ -5,8 +5,17 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
 inputs:
-  githubToken:
-    description: 'GitHub Token to access a private repository.'
+  gcloud_service_key:
+    description: 'Token to access a private repository.'
+    required: false
+  registry:
+    description: 'registry.'
+    required: false
+  project_id:
+    description: 'Project id.'
+    required: false
+  image_name:
+    description: 'image name.'
     required: false
   scanArguments:
     description: 'Argument options for scan.'
