@@ -5,7 +5,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
 inputs:
-  gcloud_service_key:
+  githubToken:
     description: 'Token to access a private repository.'
     required: false
   registry:
