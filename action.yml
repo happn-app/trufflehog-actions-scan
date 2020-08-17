@@ -5,14 +5,8 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
 inputs:
-  registry:
-    description: 'registry.'
-    required: false
-  project_id:
-    description: 'Project id.'
-    required: false
-  image_name:
-    description: 'image name.'
+  githubToken:
+    description: 'GitHub Token to access a private repository.'
     required: false
   scanArguments:
     description: 'Argument options for scan.'
