@@ -8,7 +8,7 @@ if [ -n "${INPUT_SCANARGUMENTS}" ]; then
 fi
 
 if [ -n "${INPUT_GITHUBTOKEN}" ]; then
-  githubRepo="https://$INPUT_GITHUBTOKEN@github.com/$GITHUB_REPOSITORY" # Overwrite for private repository if token provided
+  githubRepo="https:///x-access-token:$INPUT_GITHUBTOKEN@github.com/$GITHUB_REPOSITORY.git" # Overwrite for private repository if token provided
 else
   githubRepo="https://github.com/$GITHUB_REPOSITORY" # Default target repository
 fi
