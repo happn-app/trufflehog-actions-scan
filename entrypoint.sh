@@ -14,4 +14,4 @@ else
 fi
 
 query="$args $githubRepo" # Build args query with repository url
-trufflehog $query
+trufflehog $query > trufflehog_results
